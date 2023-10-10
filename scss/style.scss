@@ -1,0 +1,35 @@
+body {
+    .container {
+        h1 {
+            // styles for the heading
+            text-align: center;
+        }
+        #weatherForm {
+            // styles for the form
+            text-align: center;
+            label {
+                // styles for the label
+            }
+            input[type="text"] {
+                // styles for the input field
+            }
+            button[type="submit"] {
+                // styles for the submit button
+            }
+        }
+        #weatherData {
+            // styles for the weather data container
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .card-content {
+                // styles for the card content
+                display: flex;
+                .forecast-card{
+                    // styles for the forecast card
+                }
+            }
+        }
+    }
+}
