@@ -4,11 +4,20 @@ body .container h1 {
 body .container #weatherForm {
   text-align: center;
 }
-body .container #weatherData {
+body .container #weatherData .card-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 5%;
+}
+body .container #weatherData .card-content .forecast-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: beige;
+  border: 1px solid black;
 }
-body .container #weatherData .card-content {
-  display: flex;
+body .container #weatherData .card-content .forecast-card img {
+  background-color: black;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

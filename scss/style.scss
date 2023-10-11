@@ -19,15 +19,23 @@ body {
         }
         #weatherData {
             // styles for the weather data container
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
             .card-content {
                 // styles for the card content
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                margin-top: 5%;
                 .forecast-card{
                     // styles for the forecast card
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: beige;
+                    border: 1px solid black;
+                    img{
+                        background-color: black;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
