@@ -10,15 +10,17 @@
     <div class="container">
         <h1>Weather App</h1>
         <form id="weatherForm">
-            <label for="cityInput">Enter City:</label>
             <input type="text" id="cityInput" placeholder="Enter city name" required>
-            <button type="submit">Get 5-Day Forecast</button>
+            <div class="NeonButton">
+                <button type="submit" style="--color:#1e9bff;">Get 5-Day Forecast</button>
+            </div>
         </form>
         <div id="weatherData">
             <div class="card-content"></div>
         </div>
     </div>    
+    <!-- <embed src="media/navigator.mp3" loop="true" autostart="true" width="0" height="0"> -->
+</body>
     <script type='text/javascript' src="./script/config.js"></script>
     <script defer src="./script/script.js"></script>
-</body>
 </html>
