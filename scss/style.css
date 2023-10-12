@@ -49,8 +49,8 @@ body .container #weatherData {
   width: 80%;
 }
 body .container #weatherData .card-content {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-direction: column;
   margin-top: 5%;
   gap: 5px;
 }
@@ -91,6 +91,14 @@ body .container #weatherData .card-content .forecast-card img:hover {
   background-position: 100% 0;
 }
 
+@media screen and (min-width: 900px) {
+  body .container #weatherData .card-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 5%;
+    gap: 5px;
+  }
+}
 body {
   background-color: #2f3742;
   color: #dfe0e4;

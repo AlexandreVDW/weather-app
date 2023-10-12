@@ -5,8 +5,8 @@ body{
             width: 80%;
             .card-content {
                 // styles for the card content
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
+                display: flex;
+                flex-direction: column;
                 margin-top: 5%;
                 gap:5px;
                 .forecast-card{
@@ -54,4 +54,17 @@ body{
     }
 }
 
-
+@media screen and (min-width: 900px) {
+    body{
+        .container{
+            #weatherData {
+                .card-content{
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    margin-top: 5%;
+                    gap:5px;
+                }
+            }
+        }
+    }
+}
